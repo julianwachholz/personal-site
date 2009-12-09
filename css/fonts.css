@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('fonts/Helvetica.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    src: url('fonts/HelveticaBold.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: oblique;
+    src: url('fonts/HelveticaObl.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: oblique;
+    font-weight: bold;
+    src: url('fonts/HelveticaBoldObl.otf');
+}
+
+@font-face {
+	font-family: 'LetterGothic';
+	src: url('fonts/LetterGothicObl.otf');
+}

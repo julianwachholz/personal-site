@@ -1,0 +1,42 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: normal 11pt 'Helvetica', arial;
+    color: #522;
+	position: absolute;
+	width: 100%;
+    background: #922;
+    text-shadow: #e5e5e5 1px 1px 0;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+   text-shadow: #fff 1px 1px 0;
+   color: #922;
+}
+
+p {
+    padding-bottom: 6px;
+	margin-left: 6px;
+}
+
+ul {
+	list-style: circle;
+	margin-left: 16px;
+	padding-bottom: 5px;
+}
+
+img {
+	border: none;
+}
