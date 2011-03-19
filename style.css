@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/* RESETS */
+/* modified css reset by meyerweb.com */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, figure, footer, header,
+hgroup, nav, section {
+    display: block;
+}
+html {
+    overflow-y: scroll;
+}
+/* YUI font normalisation */
+body {
+    font: 13px sans-serif;
+    *font-size: small;
+    *font: x-small;
+    line-height: 1.22;
+}
+select, input, textarea {
+    font: 99% sans-serif;
+}
+
+:focus { outline: none; }
+
+body, select, input, textarea {
+    color: #444;
+}
+
+/******************************************************
+ * STYLE */
+
+/* oh hey, I like orange :) */
+::-moz-selection { color: #fff; background: #ce7b00; }
+::selection {color: #fff; background: #ce7b00; }
+
+html {
+    background-color: #e6e7e8;
+    background-repeat: no-repeat;
+    background-image: -moz-linear-gradient(top, #dbdbdb, #e6e7e8 10%);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 10%, from(#dbdbdb), to(#e6e7e8));
+}
+
+body {
+    /* adjust overall size */
+    /* font-size: .95em; */
+    width: 30em;
+    margin: 9.9em auto 0;
+    line-height: 1.5;
+    text-shadow: 0 .06em 0 rgba(255,255,255, .25);
+    cursor: default;
+}
+    #note {
+        font-family: 'NotethisRegular', sans-serif;
+        font-size: 1.16em;
+
+        position: relative;
+        padding: .85em .8em 4.25em .85em;
+        border: .06em solid #fcfcfc;
+        border: .07em solid rgba(255,255,255, .6);
+
+        /* jeez... */
+        -moz-border-radius: .25em 10em / 10em .5em;
+        -moz-border-radius-bottomleft: 30em .25em;
+        -webkit-border-radius: .25em 10em / 10em .5em;
+        -webkit-border-radius-bottomleft: 30em .25em;
+        border-radius: .25em 10em / 10em .5em;
+        border-radius-bottomleft: 30em .25em;
+
+        /* apply these properties and the pseudo elements' shadows will overlay */
+        -moz-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        transform: rotate(-2deg);        /* */
+    }
+        #note:before, #note:after {
+            -moz-box-shadow: 0 1.1em .8em rgba(0,0,0, .4);
+            -webkit-box-shadow: 0 1.1em .8em rgba(0,0,0, .4);
+            box-shadow: 0 1.1em .8em rgba(0,0,0, .4);
+            position: absolute; z-index: -2;
+            bottom: 1.16em;
+            width: 50%;
+            height: 20%;
+            content: "";
+            -moz-transform: rotate(-2deg);
+            -webkit-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            left: .8em;
+            right: auto;
+        }
+            #note:after {
+                -moz-transform: rotate(2deg);
+                -webkit-transform: rotate(2deg);
+                -o-transform: rotate(2deg);
+                left: auto;
+                right: .8em;
+            }
+
+        #note *:first-child:before {
+            content:"";
+            position:absolute;
+            z-index:-1;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+
+
+        /**
+         * Thanks to @necolas, we can have transforms without overlapping
+         * pseudo elements' shadows. Dude, awesome. :)
+         * Check out his site: http://nicolasgallagher.com/
+         */
+        #note, #note *:first-child:before {
+            -webkit-background-clip: padding-box;
+            background: #f0f0f0;
+            background-image: -moz-linear-gradient(-98deg, rgba(0,0,0,.12), rgba(255,255,255,0) 9%),
+                -moz-linear-gradient(-89deg, #efefef 80%, #fff);
+            background-image: -webkit-gradient(linear, 100% 0%, 50% 180%, from(rgba(0,0,0,.12)), color-stop(.09, rgba(255,255,255,0))),
+                -webkit-gradient(linear, 0% 0%, 0% 98%, color-stop(.8, #efefef), to(#fff));
+        }
+
+
+
+        #e404 #note {
+            -moz-box-shadow: 0 6px 6px rgba(0,0,0,.1);
+            -webkit-box-shadow: 0 6px 6px rgba(0,0,0,.1);
+            box-shadow: 0 6px 6px rgba(0,0,0,.1);
+
+            -moz-transform: rotate(-3deg) skew(1deg);
+            -webkit-transform: rotate(-3deg) skew(1.5deg);
+            -o-transform: rotate(-3deg) skew(1.5deg);
+            transform: rotate(-3deg) skew(1.5deg);
+
+            top: 30px;
+            right: 90px;
+        }
+
+/*            #e404 #note:before, #e404 #note:after {
+                display: none;
+            }
+*/
+
+
+
+        header {
+            font-size: 1.16em;
+            margin: 0 0 .3em;
+        }
+            header h1, header h2 {
+                font-size: 1em;
+                display: inline;
+                font-weight: normal;
+            }
+
+        section p {
+            margin: 0 0 .3em;
+        }
+            section a {
+                color: #444;
+                text-decoration: none;
+                border-bottom: 1px dotted #ccc;
+            }
+                section a:hover {
+                    border-color: #ce7b00;
+                }
+
+            section h3 {
+                font-weight: normal;
+                font-size: 1em;
+                margin-bottom: .3em;
+            }
+
+            section small {
+                font-size: 0.83em;
+            }
+
+            section strong {
+                font-weight: normal;
+                font-size: 1.17em;
+            }
+
+            section dfn {
+                cursor: help;
+                white-space: nowrap;
+                font-style: normal;
+            }
+
+            section ul {
+                padding-left: 20px;
+                list-style: circle outside;
+            }
+
+            section li {
+                margin-bottom: .4em;
+            }
+
+        section + section {
+            margin-top: 1.8em;
+        }
+
+        section input, section textarea {
+            font-family: 'NotethisRegular', sans-serif;
+            border: none; background: none;
+        }
+            section textarea {
+                width: 99%; max-width: 99%;
+                padding: .2em .1em 0; margin-bottom: .3em;
+                height: 12em; resize: none; overflow: hidden;
+            }
+
+            section label {
+                display: none;
+            }
+
+                input.submit:hover, input.submit:focus, input:focus, textarea:focus {
+                    border-color: #ce7b00;
+                }
+
+                /* no js styles */
+                .no-js textarea {
+                    border: 1px dotted #777;
+                }
+                    .no-js textarea:focus {
+                        border-style: solid;
+                    }
+
+                input.submit {
+                    margin: .6em 0 0; padding: 2px 5px; background: #f6f6f6;
+                    border: 1px solid #ccc;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    border-radius: 4px;
+
+                    -moz-box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 0 #fff, 0 1px 0 #fff;
+                    -webkit-box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 0 #fff, 0 1px 0 #fff;
+                    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 0 #fff, 0 1px 0 #fff;
+
+                    cursor: pointer;
+                }
+                    input.submit:active {
+                        padding: 3px 5px 1px;
+
+                       -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.1), inset 0 -1px 0 #fff, 0 1px 0 #fff;
+                       -webkit-box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 0 #fff, 0 1px 0 #fff;
+                       box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 0 #fff, 0 1px 0 #fff;
+                   }
+
+                label, #b { position:absolute !important;
+                    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+                    clip: rect(1px, 1px, 1px, 1px); }
+
+
+                ::-moz-focus-inner { border: none; }
+
+    footer {
+        position: absolute; bottom: 1.35em; right: 3em;
+        text-align: right; font-size: .875em;
+    }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            border-bottom: 2px solid #ce7b00;
+            margin-left: 10px;
+        }
+            footer a:hover {
+                border-color: #777;
+            }
+
+@font-face {
+    font-family: 'NotethisRegular';
+    src: url('notethis/Note_this-webfont.eot');
+    src: local('☺'),
+        url('notethis/Note_this-webfont.woff') format('woff'),
+        url('notethis/Note_this-webfont.ttf') format('truetype'),
+        url('notethis/Note_this-webfont.svg#webfont6slwoXsK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* printing, for whoever wants that ;) */
+@media print {
+
+body { width: 100%; }
+* { width: auto; margin: auto !important; padding: auto !important; color: #000000 !important; background: #FFFFFF !important; }
+*:after, *:before { display: none; }
+a { border: none !important; text-decoration: underline !important; }
+a:after { display: inline; content: " (" attr(href) ")"; }
+
+}

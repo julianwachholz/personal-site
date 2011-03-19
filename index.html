@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Julian Wachholz</title>
+  <meta name="description" content="I am a web developer and make beautiful websites.">
+  <meta name="robots" content="all">
+  <meta name="author" content="Julian Wachholz">
+
+  <!-- link rel="shortlink" href="" -->
+  <link rel="stylesheet" href="style.css?v=2" type="text/css">
+
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <div id="note" itemscope itemtype="http://data-vocabulary.org/Person">
+    <header>
+      <h2 itemprop="name">Julian Wachholz</h2>&nbsp;is a <h1 itemprop="role">Web Developer</h1>
+    </header>
+
+    <section>
+      <p>
+        I am a 19 year old web developer, based in
+        <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+          <span itemprop="region">Zürich</span>, <span itemprop="country-name">Switzerland</span>.
+        </span>
+        <!-- I'm currently working at <a href="http://www.unic.com/" target="_blank" itemprop="affiliation">Unic</a>. -->
+      </p>
+      <p>
+        If you've got a question or just want to say hello, feel free to <a href="mailto:me@julianwachholz.ch">drop me a line</a>.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <a href="files/pubkey.asc">gpg key</a>
+  </footer>
+
+  <script>
+    var _gaq=[['_setAccount','UA-16722648-1'],['_trackPageview']];
+    (function(d,t){
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;
+      g.src=('https:'==location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s);
+    })(document,'script');
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Pure CSS Nettuts+ Logo</title>
+<style>
+    /*****************************************\
+     * Nettutsplus Logo done in CSS3         *
+     * Best viewed in Safari 4+ or Chrome 5+ *
+    \*****************************************/
+    
+    /* logo outline */
+    #logo {
+      text-decoration: none;
+      position: relative;
+      display: block;
+      width: 192px;
+      height: 58px;
+      border: 1px solid #000;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+    }
+
+    /* logo font */
+    #logo span {
+      position: absolute;
+      height: 56px;
+
+      /* need better font here */
+      font: normal bold 39px/60px "Arial Black";
+      letter-spacing: -2px;
+
+      text-shadow: 0 0 .8px #fff, /* text-stroke is too fuzzy */
+        0 1px 2px rgba(0,0,0,.3);
+    }
+
+    /* first half of the logo */
+    #logo span:first-child {
+      width: 83px;
+
+      background: #3D948E;
+      background: -webkit-gradient(radial, 50 3, 5, 50 3, 60, from(#3D948E), to(#1D574A));
+      background: -moz-radial-gradient(50px 3px, circle, #3D948E, #1D574A);
+
+      border: 1px solid #338E84;
+      border-top-color: #5AA7A1;
+      border-right-color: #163D36;
+      border-bottom-color: #298470;
+    }
+
+    /* second half of the logo */
+    #logo > span:last-child {
+      left: 85px;
+      width: 105px;
+
+      background: #30776A;
+      background: -webkit-gradient(linear, left top, left bottom, from(#47A19A), to(#30776A));
+      background: -moz-linear-gradient(top, #47A19A, #30776A);
+
+      border: 1px solid #5AC1BE;
+      border-top-color: #6AD1CE;
+      border-right-color: #57C1BB;
+      border-bottom-color: #47B19E;
+    }
+
+    /* position for "net" and "tuts+" */
+    #logo span i {
+      display: block;
+      position: relative;
+
+      top: 11px;
+      left: 9px;
+
+      font-style: normal;
+      color: #fff;
+      line-height: 31px;
+    }
+      /* position "tuts+" */
+      #logo span:last-child i {
+        left: 4px;
+      }
+
+      /* make the "+" a bit smaller */
+      #logo span i b {
+        display: inline-block;
+        font-size: 26px;
+        position: relative;
+        left: 1px;
+        top: -2px;
+      }
+
+    /* text gradient part */
+    #logo span i:before,
+    #logo span i b:before {  /* the "+" needs a third gradient, won't render gracefully without it */
+      -webkit-mask-image: -webkit-gradient(
+        linear, left top,
+        left bottom,
+        color-stop(.3, rgba(0,0,0,0)),
+        color-stop(1, rgba(0,0,0,1))
+      );
+
+      position: absolute;
+      content: 'net';
+      color: rgba(0,0,0,.2);
+    }
+      /* content for the second part */
+      #logo span:last-child i:before {
+        content: 'tuts';
+      }
+      #logo span i b:before {
+        content: '+';
+      }
+
+  /* less important styles */
+  body { width: 500px; margin: 50px auto; padding: 0 75px; background: #f2f2f2; font: normal 12px Arial;
+    color: #666364; text-shadow: 0 1px 0 #ffffff; }
+  h1 { margin: 0 0 40px; font: small-caps bold 30px Verdana; color: #d5d5d6;
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #9f9f9f; letter-spacing: .05em; }
+  blockquote { margin-left: 40px; }
+  a { color: inherit; }
+  a:hover { text-decoration: none; }
+  ul { margin-top: 40px; list-style: circle outside; }
+</style>
+</head>
+<body>
+  <h1>Pure CSS3 Nettuts+ Logo</h1>
+
+  <a id="logo" href="http://net.tutsplus.com/" target="_blank">
+   <span><i>net</i></span>
+   <span><i>tuts<b>+</b></i></span>
+  </a>
+
+  <ul>
+    <li>Created out of boredom :-)</li>
+    <li>
+      Displays correctly only in Safari (with Arial Black installed)<br />
+      <a href="nettuts.png">Click here for a side-by-side comparison</a>
+    </li>
+    <li>If anyone can provide a better matching font, <a href="../../#contact">drop me a line.</a></li>
+  </ul>
+
+  <blockquote>
+    &mdash; Created by <a href="../..">Julian Wachholz</a>.
+  </blockquote>
+
+  <!-- ObserverApp Beta :) -->
+  <script type="text/javascript" src="http://www.observerapp.com/record.js"></script>
+  <script type="text/javascript">
+  try { Observerapp.record("4c9627a911e702c87b0276c5"); } catch(e) {};
+  </script>
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16722648-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</body>
+</html>

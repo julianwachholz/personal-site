@@ -1,0 +1,242 @@
+/*!
+ * HTML5 Slides Stylesheet
+ * works best with Firefox >3.6.*
+ *
+ * This is a small presentation about "La Haine" by Mathieu Kassovitz which I've
+ * made for my Frech class. Please view it in Firefox or Safari and set the window
+ * size to 1024*768 (School's PCs, yeah) for best viewing.
+ *
+ * SPACEBAR shows the next item ;-)
+ * (c) 2010 Julian Wachholz
+ */
+
+html, body {
+	margin: 0;
+	padding: 3em;
+
+	font: normal 1.16em/1.56em 'GraublauWeb';
+	color: rgb(75,75,75);
+	text-shadow: 0 1px 0 white;
+
+	background: url(img/bg.png) repeat 1em 1em;
+
+	overflow: hidden;
+	cursor: none;
+}
+
+div#slide-box {
+	display: block;
+	position: absolute;
+		top: 0;
+		left: 0;
+	margin: 4.5% 10% 4%;
+	height: 80%;
+	width: 80%;
+
+	background: rgb(240,240,240);
+	background: -moz-linear-gradient(top, rgb(250,250,250), rgb(240,240,240) 10%);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(250,250,250)), color-stop(.1, rgb(240,240,240)));
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	-moz-box-shadow: 0 0 .8em rgba(0,0,0,.7), inset 0 .1em .5em white;
+	-webkit-box-shadow: 0 0 .8em rgba(0,0,0,.7), inset 0 .1em .5em white;
+	box-shadow: 0 0 .8em rgba(0,0,0,.7), inset 0 .1em .5em white;
+
+	opacity: 0;
+}
+
+	section#last {
+		display: block;
+		opacity: 0;
+	}
+
+section {
+	position: absolute;
+		top: 0;
+		left: 0;
+	height: 100%;
+	width: 100%;
+	padding: 1em 1.2em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	opacity: 0;
+}
+
+h1, h2 {
+	margin: .4em 0;
+	font-size: 2.4em;
+	text-shadow: 0 1px 0 white, 0 -1px 0 rgba(0,0,0,.8);
+}
+
+	h1 span {
+		font-size: .7em;
+		font-weight: normal;
+		line-height: 0;
+	}
+
+		h1 span:before {
+			content: "\2013" " ";
+		}
+
+	#slide-0 h1 {
+		margin: 22% 0 0 3%;
+		text-transform: uppercase;
+	}
+
+	#last h1, #last p {
+		margin-top: 22%;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgba(75,75,75,.8);
+		text-shadow: 0 1px 0 rgba(255,255,255,.4), 0 -1px 0 rgba(0,0,0,.3);
+	}
+
+	#last p {
+		text-transform: none;
+	}
+
+h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+	#slide-0 h2 {
+		margin: .6em 0 0 6%;
+	}
+
+hr {
+	height: 0px;
+
+	border: none;
+	border-top: 1px solid rgba(0,0,0,.25);
+	border-bottom: 1px solid rgba(255,255,255,.6);
+}
+
+	#slide-0 hr {
+		width: 75%;
+		margin: .5em 0 0 3%;
+	}
+
+p {
+	margin: .2em .6em;
+	text-align: justify;
+	font-size: 1.3em;
+
+	/* animated */
+	padding-top: 26px;
+	opacity: 0;
+}
+
+
+section > ol, section > ul {
+	margin: 10% 0 0 14%;
+	font-size: 1.3em;
+}
+	section > ol {
+		list-style: upper-roman;
+	}
+
+	li {
+		position: relative;
+		margin-bottom: .2em;
+	}
+
+		li #joke {
+			position: absolute;
+		}
+
+	li,p,.show {
+		/* animated */
+		padding-top: 26px;
+		opacity: 0;
+	}
+
+		.ytplayer {
+			display: none;
+		}
+
+ul {
+	list-style: circle;
+}
+
+	li.nobull {
+		list-style: none;
+	}
+
+	ol ol, ol ul, ul ol, ul ul {
+		font-size: .85em;
+	}
+
+section div.show {
+	padding-top: 0;
+}
+
+	div.img {
+		width: 33%;
+		height: 68%;
+
+		float: right;
+		margin: 1em 1em 0 0;
+
+		background-repeat: no-repeat;
+
+		border: 4px solid white;
+		-moz-border-radius: .8em;
+		-webkit-border-radius: .8em;
+		border-radius: .8em;
+		-moz-box-shadow: 0 .06em 6px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 .06em 6px rgba(0,0,0,.4);
+		box-shadow: 0 .06em 6px rgba(0,0,0,.4);
+
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+	}
+
+	#yt1 {
+		width: 425px;
+		margin: 5% auto;
+	}
+
+
+section dl {
+	display: block;
+	position: absolute;
+	bottom: -.4em;
+	left: 1.2em;
+	font-size: .8em;
+	color: #8C8C8C;
+}
+
+	section dl dt, section dl dd {
+		margin: 0;
+		display: inline;
+	}
+
+	section dl dt:after {
+		content: ": ";
+	}
+
+	section dl dd:after {
+		margin: 0 .4em 0 .55em;
+		content: "\2013";
+	}
+
+		section dl dd:last-child:after {
+			content: none;
+		}
+
+/* fonts */
+@font-face {
+	font-family: 'GraublauWeb';
+	src: url('font/GraublauWeb.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GraublauWeb';
+	src: url('font/GraublauWebBold.otf');
+	font-weight: bold;
+	font-style: normal;
+}

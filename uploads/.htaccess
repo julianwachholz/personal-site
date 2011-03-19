@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{QUERY_STRING} !download$
+RewriteCond %{QUERY_STRING} !full$
+RewriteRule !^assets file-viewer.php [L]
+
+RewriteCond %{QUERY_STRING} download$
+RewriteRule . - [E=do_Download]
+Header set Content-Disposition "attachment" env=do_Download
+
+RemoveHandler .phps
+RemoveType .phps
+
