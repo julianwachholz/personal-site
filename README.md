@@ -1,6 +1,6 @@
 julianwachholz.ch
 =================
 
-This repository is for my personal website.
+The third iteration of my personal website.
 
-I just created it and still need to cleanup most stuff here and there.
+Not much to see here, it's just a plain CSS note with some links. ;-)
