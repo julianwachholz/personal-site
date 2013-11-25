@@ -35,9 +35,10 @@ a:hover {
     border-bottom: 1px solid rgba(102,0,34,0.5);
 }
 
-.pgp-key {
+footer {
+    position: absolute;
+    bottom: 3%; right: 3%;
     font-size: 0.6em;
-    vertical-align: super;
 }
 
 ::selection {
