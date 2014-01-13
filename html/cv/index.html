@@ -1,0 +1,140 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<title>julian wachholz &ndash; résumé</title>
+<meta name="description" content="Personal curriculum vitae of Julian Wachholz.">
+
+<link rel="stylesheet" href="cv.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+	<h1 itemprop="name">Julian Wachholz</h1>
+	<h2 itemprop="jobTitle">Web Developer</h2>
+	<meta itemprop="gender" content="male">
+	<time itemprop="birthDate" datetime="1991-11-24"><abbr title="born">est.</abbr> Nov 24<sup>th</sup> 1991</time>
+
+	<!-- <img itemprop="image" alt="Profile picture of Julian Wachholz" src="../img/photo.jpg"> -->
+
+	<section>
+		<h3>Career</h3>
+		<ol>
+			<!--
+				unfortunately there's no standard for former employers right now. guess this gets the job done.
+				suggestion as per https://groups.google.com/forum/#!topic/schemaorg-discussion/t7byWb1yYEc
+			-->
+			<li itemscope itemtype="http://schema.org/Event/Job">
+				<time itemprop="startDate" datetime="2011-03-01">2011</time>
+				<span class="endDate">current</span>
+
+				<h4 itemprop="name">Apprentice / Application Engineer</h4>
+
+				<a itemprop="url" itemscope itemtype="http://schema.org/Corporation" href="https://www.unic.com/">
+					<span itemprop="name">Unic AG</span>
+				</a>
+
+				<p itemprop="description">
+					At this full service agency I primarily worked with PHP and
+					TYPO3. Tasks ranged from configuring the CMS to developing
+					customised applications on top of it.
+				</p>
+			</li>
+			<li itemscope itemtype="http://schema.org/Event/Job">
+				<time itemprop="endDate" datetime="2011-02">2011</time>
+				<time itemprop="startDate" datetime="2010-08">2010</time>
+
+				<h4 itemprop="name">Intern</h4>
+
+				<a itemprop="url" itemscope itemtype="http://schema.org/Corporation" href="http://toweb.ch/">
+					<span itemprop="name">Toweb GmbH</span>
+				</a>
+
+				<p itemprop="description">
+					Main tasks included converting Photoshop designs to templates
+					used in a CMS and setting it up for customers to use. Clients
+					were able to get in touch directly for help and instructions
+					on how to use their system.
+				</p>
+			</li>
+			<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+				<time itemprop="startDate" datetime="2007">2007</time>
+				<time itemprop="endDate" datetime="2010">2010</time>
+
+				<h4 itemprop="description">Informatikmittelschule</h4>
+
+				<a itemprop="url" href="http://www.ksh.ch/">
+					<span itemprop="name">Kantonsschule Hottingen</span>
+				</a>
+
+				<p>
+					Dropped out after 3<sup>rd</sup> year.
+				</p>
+			</li>
+			<li itemscope itemtype="http://schema.org/Event">
+				<time itemprop="startDate" datetime="1997">1997</time>
+				<time itemprop="endDate" datetime="2007">2007</time>
+
+				<h4 itemprop="description">Elementary school</h4>
+
+				<p>Embrach, Niederhasli.</p>
+			</li>
+		</ol>
+	</section>
+
+	<aside class="contact">
+		<h3>Contact</h3>
+
+		<h4>Phone</h4>
+		<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+			<span itemprop="telephone">+41 79 452 93 63</span>
+			<small itemprop="hoursAvailable" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+				available from 
+				<time itemprop="opens" datetime="07:00Z">8a</time>
+				to
+				<time itemprop="closes" datetime="17:00Z">6p</time>
+			</small>
+		</div>
+
+		<h4>Email</h4>
+		<a itemprop="email" href="mailto:julian@wachholz.ch">julian@wachholz.ch</a>
+
+		<h4>Web</h4>
+		<a itemprop="url" href="https://ju.io/">ju.io</a>
+
+		<h4>Twitter</h4>
+		<span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+			<meta itemprop="contactType" content="Twitter">
+			<a itemprop="url" href="https://twitter.com/julianwachholz">
+				<span itemprop="name">@julianwachholz</span>
+			</a>
+		</span>
+
+		<h4>GitHub</h4>
+		<span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+			<meta itemprop="contactType" content="GitHub">
+			<a itemprop="url" href="https://github.com/julianwachholz">
+				<span itemprop="name">@julianwachholz</span>
+			</a>
+		</span>
+
+		<h4>Snail mail</h4>
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<span itemprop="">Haspelstrasse 16</span><br>
+			<span itemprop="postalCode">8155</span>
+			<span itemprop="addressLocality">Niederhasli</span><br>
+			<span itemprop="addressRegion">Zurich</span>,
+			<span itemprop="addressCountry" itemscope itemtype="http://schema.org/Country"><span itemprop="name">Switzerland</span></span>
+		</div>
+	</aside>
+
+</div>
+
+
+<footer>
+	<ul>
+		<li><a href="..">Back</a></li>
+		<li><a href="../julian@wachholz.ch.asc" class="pgp-key">PGP Key</a> (617EA46E)</li>
+	</ul>
+</footer>

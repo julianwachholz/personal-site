@@ -1,4 +1,4 @@
-/* style for ju.io */
+/* style for ju.io/cv */
 
 html {
     margin: 0 auto;
@@ -15,7 +15,7 @@ header {
     text-transform: lowercase;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-weight: 300;
 }
 
@@ -37,7 +37,7 @@ a:hover {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 3%; right: 3%;
     font-size: 0.6em;
 }
