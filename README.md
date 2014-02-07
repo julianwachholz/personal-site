@@ -22,3 +22,5 @@ If you’re on Mountain Lion or lower:
 If you’re on Mavericks or higher:
 
     sudo defaults write /Library/Preferences/com.apple.security RSAMaxKeySize -int 8192
+
+You will probably need to restart your machine for the changes to take effect.
