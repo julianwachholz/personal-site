@@ -1,14 +1,14 @@
 /* style for ju.io */
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300';
 
 html {
     margin: 0 auto;
     max-width: 70%;
 
-    background: #efeaea;
-    color: #333333;
-
     font: 300 23px/1.6 'Josefin Sans', sans-serif;
 }
+
+body { color: #333333; }
 
 header {
     font-size: 200%;
@@ -24,7 +24,7 @@ p {
     max-width: 33em;
 }
 
-a {
+body a {
     color: #660022;
     text-decoration: none;
     border-bottom: 1px solid rgba(102,0,34,0.0);
@@ -40,9 +40,16 @@ footer {
     position: absolute;
     bottom: 3%; right: 3%;
     font-size: 0.6em;
+    text-align: right;
 }
 
 ::selection {
     color: #f0f0f0;
     background: #333333;
+}
+
+@media only screen and (max-width: 480px) {
+    html { font-size: 19px; max-width: 80%; }
+    header { font-size: 120%; line-height: 1.2; }
+    footer { position: relative; }
 }
