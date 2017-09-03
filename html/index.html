@@ -1,56 +1,53 @@
 <!doctype html>
-<meta charset="utf-8">
-
-<title>julian wachholz</title>
-<meta name="description" content="A twenty-something year old guy with a passion for cool websites.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>julian wachholz</title>
+  <meta name="description" content="I create cool web apps and love riding motorcycles.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Julian Wachholz",
+    "image": "https://ju.io/img/photo.jpg",
+    "jobTitle": "software engineer",
+    "gender": "male",
+    "email": "julian@wachholz.ch",
+    "birthDate": "1991-11-24",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CH",
+      "addressRegion": "Zürich"
+    }
+  }
+  </script>
+</head>
 <body>
-<div itemscope itemtype="http://schema.org/Person">
-	<header>
-		<h1 itemprop="name">Julian Wachholz</h1>
-		<meta itemprop="image" content="/img/photo.jpg">
-	</header>
+  <header>
+    <img alt="photograph of Julian Wachholz" src="/img/photo.jpg">
+    <h1>Julian Wachholz</h1>
+  </header>
 
-	<section>
-		<p>
-			I'm a <time itemprop="birthDate" datetime="1991-11-24">twenty-something</time> year old
-			guy that spends way too much time online developing websites with Python/Django, Javascript and even some Erlang.
-			<meta itemprop="gender" content="male">
-		</p>
-		<p>
-			If you're interested in working with me on your next project, feel free to contact me at the email below.
-			I am based in the beautiful city of
-			<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="addressRegion">Zurich</span>,
-				<span itemprop="addressCountry" itemscope itemtype="http://schema.org/Country"><span itemprop="name">Switzerland</span></span>.
-			</span>
-			I enjoy <a href="http://techup.ch/user/julianwachholz">meetups and having a beer once in a while</a>
-			just as much as chatting on <a href="https://twitter.com/julianwachholz">Twitter</a> and <a href="https://steamcommunity.com/id/yousai">playing games</a>.
-		</p>
-		<p>
-			You can have a look at my projects on <a href="https://github.com/julianwachholz">GitHub</a>,
-			find me on <a href="https://plus.google.com/+JulianWachholz?rel=author">Google+</a>
-			or drop me a line at <a href="mailto:julian@wachholz.ch" itemprop="email">julian@wachholz.ch</a>.
-		</p>
-	</section>
-</div>
-
-<footer>
-	<a href="xmpp:me@ju.io" class="xmpp">Chat with me</a>
-</footer>
-
-<link rel="stylesheet" href="/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300">
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50657908-1', 'ju.io');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-</script>
+  <section>
+    <p>
+      Python developer with a passion for performant and clean code. I enjoy writing concise documentation and using
+      <a href="https://en.wikipedia.org/wiki/Test-driven_development"><abbr title="test-driven development">TDD</abbr></a>.
+      Sometimes I experiment with new technology to learn new skills for fun.
+    </p>
+    <p>
+      I'm in my mid twenties and live in the beautiful canton of Zürich, Switzerland.
+      Proud owner of a <a href="https://www.zeromotorcycles.com/">Zero Motorcycles</a> electric bike.
+    </p>
+    <h2>Connect with me</h2>
+    <ul>
+      <li>Send me an email: <a href="mailto:julian@wachholz.ch">julian@wachholz.ch</a></li>
+      <li>Follow me on Twitter: <a href="https://twitter.com/julianwachholz">@julianwachholz</a></li>
+      <li>See my code on <a href="https://github.com/julianwachholz">GitHub</a></li>
+      <li>Add me to your circles on <a href="https://plus.google.com/+JulianWachholz?rel=author">Google+</a></li>
+    </ul>
+  </section>
 </body>
+</html>

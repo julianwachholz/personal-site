@@ -1,53 +1,61 @@
 /* style for ju.io */
 html {
-    margin: 0 auto;
-    max-width: 70%;
-
-    font: 300 23px/1.6 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  max-width: 70%;
+  font: normal 23px/1.6 'Fira Mono', monospace;
 }
 
-body { color: #333333; }
+body {
+  background: #1b1d1e;
+  color: #d8d8d0;
+}
 
 header {
-    font-size: 200%;
-    text-transform: lowercase;
+  font-size: 200%;
+  text-transform: lowercase;
+  margin: .5em 0;
 }
 
-h1 {
-    font-weight: 300;
+header img {
+  width: 100px;
+  margin-bottom: -20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+header h1 {
+  display: inline;
 }
 
 p {
-    margin: 0 0 .5em;
-    max-width: 33em;
+  margin: 0 0 .5em;
+  max-width: 35em;
 }
 
-body a {
-    color: #660022;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(102,0,34,0.0);
-    transition: border-color .2s;
-    -webkit-transition: border-color .2s;
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, .5);
+}
+
+a {
+  color: #cc1c41;
+  text-decoration: none;
+  transition: color .3s;
 }
 
 a:hover {
-    border-color: rgba(102,0,34,0.5);
-}
-
-footer {
-    position: absolute;
-    bottom: 3%; right: 3%;
-    font-size: 0.6em;
-    text-align: right;
+  color: #f00;
 }
 
 ::selection {
-    color: #f0f0f0;
-    background: #333333;
+  color: #d8d8d0;
+  background: #cc1c41;
 }
 
-@media only screen and (max-width: 480px) {
-    html { font-size: 19px; max-width: 80%; }
-    header { font-size: 120%; line-height: 1.2; }
-    footer { position: relative; }
+@media only screen and (max-device-width: 480px) {
+  html { font-size: 19px; max-width: 90%; }
+  header { font-size: 75%; margin: 1.5em 0; }
+  header img { width: 50px; }
+  ul { padding-left: 1em; }
 }
+
