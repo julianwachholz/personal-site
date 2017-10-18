@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  background: #1b1d1e;
-  color: #d8d8d0;
+  background: #2b303b;
+  color: #eff1f5;
 }
 
 header {
@@ -38,18 +38,18 @@ abbr {
 }
 
 a {
-  color: #cc1c41;
+  color: #8fa1b3;
   text-decoration: none;
   transition: color .3s;
 }
 
 a:hover {
-  color: #f00;
+  color: #b48ead;
 }
 
 ::selection {
-  color: #d8d8d0;
-  background: #cc1c41;
+  color: #eff1f5;
+  background: #8fa1b3;
 }
 
 @media only screen and (max-device-width: 480px) {
