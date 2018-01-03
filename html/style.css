@@ -29,7 +29,36 @@ header h1 {
 
 p {
   margin: 0 0 .5em;
+}
+
+ol, ul {
+  padding: 0 0 0 25px;
+  list-style: none;
+}
+
+p, li {
   max-width: 35em;
+  position: relative;
+}
+li::before {
+  content: '↪';
+  width: 25px;
+  margin-left: -25px;
+}
+
+time {
+  background: #2b303b;
+  background: linear-gradient(to right, transparent, #2b303b 1em);
+  padding-left: 1em;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.0;
+  transition: .2s linear opacity;
+}
+li:hover time {
+  opacity: 1.0;
 }
 
 abbr {
@@ -56,6 +85,5 @@ a:hover {
   html { font-size: 19px; max-width: 90%; }
   header { font-size: 75%; margin: 1.5em 0; }
   header img { width: 50px; }
-  ul { padding-left: 1em; }
 }
 
