@@ -1,12 +1,62 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>julian wachholz</title>
   <meta name="description" content="I create cool web apps and love riding motorcycles.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
-  <link rel="stylesheet" href="/style.css">
+  <style>
+html {
+  margin: 0 auto;
+  max-width: 70%;
+  font: normal 23px/1.6 'Fira Mono', monospace;
+}
+body {
+  background: #2b303b;
+  color: #eff1f5;
+}
+header {
+  font-size: 200%;
+  text-transform: lowercase;
+  margin: .5em 0;
+}
+header img {
+  width: 100px;
+  margin-bottom: -20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+header h1 {
+  display: inline;
+}
+p {
+  margin: 0 0 .5em;
+  max-width: 35em;
+}
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, .5);
+}
+a {
+  color: #8fa1b3;
+  text-decoration: none;
+  transition: color .3s;
+}
+a:hover {
+  color: #b48ead;
+}
+::selection {
+  color: #eff1f5;
+  background: #8fa1b3;
+}
+@media only screen and (max-device-width: 480px) {
+  html { font-size: 19px; max-width: 90%; }
+  header { font-size: 75%; margin: 1.5em 0; }
+  header img { width: 50px; }
+  ul { padding-left: 1em; }
+}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -43,15 +93,20 @@
     </p>
     <h2>Connect with me</h2>
     <ul>
-      <li>Send me an email: <a href="mailto:julian@wachholz.ch">julian@wachholz.ch</a></li>
+      <li>
+        Send me an email: <a href="mailto:julian@wachholz.ch">julian@wachholz.ch</a>
+        (<a href="http://pgp.mit.edu/pks/lookup?op=vindex&search=0x7595F9144CE9BA4B" target="_blank" rel="noopener">PGP</a>)
+      </li>
       <li>Follow me on Twitter: <a href="https://twitter.com/julianwachholz">@julianwachholz</a></li>
       <li>See my code on <a href="https://github.com/julianwachholz">GitHub</a></li>
-      <li>Add me to your circles on <a href="https://plus.google.com/+JulianWachholz?rel=author">Google+</a></li>
     </ul>
   </section>
   <section>
     <h2>My projects</h2>
     <ul>
+      <li>
+        Sign up for surprise packages for yourself or friends at <a href="https://surprisepackage.me">SurprisePackage.me</a>!
+      </li>
       <li>
         Play a game of Trivia online against other people at
         <a href="https://trivia.ju.io/">trivia.ju.io</a> (2015)
