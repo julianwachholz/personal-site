@@ -1,108 +1,67 @@
-/* style for ju.io */
 html {
-  margin: 0 auto;
-  max-width: 70%;
-  font: normal 23px/1.6 'Fira Mono', monospace;
+    margin: 0 auto;
+    max-width: 85%;
+    font: normal 300 18px/1.9 'Roboto', sans-serif;
+    background: #f5f5f5;
+    color: #303030;
 }
 
-body {
-  background: #2b303b;
-  color: #eff1f5;
-  margin: 0;
-}
-
-header {
-  font-size: 150%;
-  text-transform: lowercase;
-  margin: .5em 0;
-}
-
-header figure {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  margin: 0 0 -30px 0;
-  border-radius: 4px;
-  border: 2px solid #fff;
-  transform: rotate(-5deg);
-  overflow: hidden;
-}
-header img {
-  width: 110px;
-  height: 110px;
-  transform: rotate(5deg) translate(-5px, -5px);
-}
-
-header h1 {
-  display: inline;
-}
-
-p {
-  margin: 0 0 .5em;
-}
-
-ol, ul {
-  padding: 0 0 0 25px;
-  list-style: none;
-}
-
-p, li {
-  max-width: 35em;
-  position: relative;
-}
-li::before {
-  content: '↪';
-  width: 25px;
-  margin-left: -25px;
-}
-
-ul.tags li {
-  float: left;
-  margin: 0 1em 0 0;
-}
-ul.tags li::before {
-  content: none;
-}
-
-time {
-  background: #2b303b;
-  background: linear-gradient(to right, transparent, #2b303b 1em);
-  padding-left: 1em;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  opacity: 0.0;
-  transition: .2s linear opacity;
-}
-li:hover time {
-  opacity: 1.0;
-}
-
-abbr {
-  text-decoration: none;
-  border-bottom: 1px dotted rgba(255, 255, 255, .5);
+h1, h2, h3 {
+    font-weight: 300;
 }
 
 a {
-  color: #8fa1b3;
-  text-decoration: none;
-  transition: color .3s;
+    color: #eff1f5;
+    color: inherit;
 }
 
-a:hover {
-  color: #b48ead;
+abbr {
+    text-decoration: none;
 }
 
-::selection {
-  color: #eff1f5;
-  background: #8fa1b3;
+header {
+    position: relative;
 }
 
-@media only screen and (max-device-width: 480px) {
-  html { font-size: 19px; max-width: 90%; }
-  header { font-size: 70%; margin: 1.5em 0; }
-  h2 { font-size: 110%; }
-  header figure { margin-bottom: -20px; width: 50px; height: 50px; }
-  header img { width: 60px; height: 60px; }
+figure {
+    width: 100px;
+    height: 100px;
+    margin: 10px 15px 10px 0;
+    float: left;
+    border-radius: 4px;
+    transform: rotate(-5deg);
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 110px;
+    height: 110px;
+    transform: rotate(5deg) translate(-5px, -5px);
+}
+
+ol {
+    list-style: disc;
+}
+footer {
+    clear: both;
+}
+
+.tags li {
+    list-style: none;
+    float: left;
+    margin: 0 7px 0 0;
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        max-width: 800px;
+        padding-left: 200px;
+    }
+    figure {
+        position: absolute;
+        top: 10px;
+        left: -125px;
+    }
 }
