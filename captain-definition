@@ -2,6 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM nginx:alpine",
-    "COPY html /usr/share/nginx/html"
+    "COPY html /usr/share/nginx/html",
+    "COPY site.conf /etc/nginx/sites-enabled/default"
   ]
 }
