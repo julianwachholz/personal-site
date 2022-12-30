@@ -1,74 +1,84 @@
+@font-face {
+  font-family: "Source Sans 3 VF";
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/SourceSans3VF-Roman.ttf.woff2") format("woff2"),
+    url("font/SourceSans3VF-Roman.ttf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: regular;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("font/PlayfairDisplay-Regular.woff") format("woff");
+}
+
 html {
-    margin: 0 auto;
-    max-width: 85%;
-    font: normal 300 18px/1.9 'Roboto', sans-serif;
-    background: #f5f5f5;
-    color: #303030;
+  margin: 0 auto;
+  max-width: 85ch;
+  font: normal 350 1.4rem/1.9 "Source Sans 3 VF", sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        background: #303030;
-        color: #f5f5f5;
-    }
+body {
+  padding: 0 1rem;
 }
 
-h1, h2, h3 {
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  line-height: 1;
+}
+h1 {
+  font-size: clamp(2.3rem, 12vw, 4.5rem);
 }
 
 a {
-    color: #eff1f5;
-    color: inherit;
+  color: #a21caf;
+  text-decoration: none;
 }
-
-abbr {
-    text-decoration: none;
-}
-
-header {
-    position: relative;
-}
-
-figure {
-    width: 100px;
-    height: 100px;
-    margin: 10px 15px 10px 0;
-    float: left;
-    border-radius: 4px;
-    transform: rotate(-5deg);
-    overflow: hidden;
-    border: 2px solid #fff;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+a:hover,
+a:active {
+  color: #86198f;
+  text-decoration: underline;
 }
 
 img {
-    width: 110px;
-    height: 110px;
-    transform: rotate(5deg) translate(-5px, -5px);
+  margin: 0 1rem 0.5rem 0;
+  float: left;
+  shape-outside: circle(60%) border-box;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0.1rem 0.5rem rgb(0 0 0 / 0.05);
 }
 
 ol {
-    list-style: disc;
+  list-style: disc;
 }
-footer {
-    clear: both;
+ol,
+ul {
+  padding: 0 0 0 1.2rem;
 }
-
-.tags li {
-    list-style: none;
-    float: left;
-    margin: 0 7px 0 0;
+li::marker {
+  color: #a21caf;
 }
 
-@media only screen and (min-width: 641px) {
-    html {
-        max-width: 800px;
-        padding-left: 200px;
-    }
-    figure {
-        position: absolute;
-        top: 10px;
-        left: -125px;
-    }
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #1e293b;
+    color: #f8fafc;
+  }
+  a:hover,
+  a:active {
+    color: #c026d3;
+  }
 }

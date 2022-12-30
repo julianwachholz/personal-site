@@ -8,11 +8,7 @@
       content="Software engineer with extensive Python and Javascript knowledge. I love fast, beautiful websites and riding motorcycles."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300"
-    />
-    <link rel="stylesheet" href="/style.css?v2" />
+    <link rel="stylesheet" href="/style.css?v3" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -39,9 +35,12 @@
   <body>
     <header>
       <h1>Julian Wachholz</h1>
-      <figure>
-        <img alt="Photograph of Julian Wachholz" src="/img/photo.jpg" />
-      </figure>
+      <img
+        alt="Photograph of Julian Wachholz"
+        src="/img/photo.jpg"
+        width="128"
+        height="128"
+      />
     </header>
     <section>
       <p>
@@ -74,8 +73,11 @@
         </li>
         <li>
           Follow me:
-          <a href="https://twitter.com/julianwachholz">@julianwachholz</a> on
-          Twitter
+          <a rel="me" href="https://mastodon.social/@jwa"
+            >@jwa@mastodon.social</a
+          >
+          or
+          <a href="https://twitter.com/@julianwachholz">on Twitter</a>
         </li>
         <li>
           Stay in touch
@@ -84,11 +86,17 @@
       </ul>
     </section>
     <section>
-      <h2>My projects</h2>
+      <h2>Projects</h2>
       <ol>
         <li>
-          <a href="https://word.rodeo/">word.rodeo</a> &ndash; <time>2022</time
-          ><br />
+          <a href="https://webstaurant.ch/">webstaurant</a> &ndash;
+          <time>2023</time><br />
+          Online food ordering platform that's fair for restaurants and
+          customers alike.
+        </li>
+        <li>
+          <a href="https://word.rodeo/">word.rodeo</a> (sold) &ndash;
+          <time>2022</time><br />
           Weekend project in the spirit of
           <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a> that lets
           you share custom puzzles.
@@ -106,41 +114,27 @@
           (defunct) &ndash; <time>2017</time><br />
           Sign up for surprise packages for yourself or friends!
         </li>
-        <li>
-          <a href="https://github.com/julianwachholz/liarsdice"
-            >Liar's Dice on IRC</a
-          >
-          &ndash; <time>2012</time><br />
-          Bluff your way to win this game of dice.<br />
-          Join <code>##liarsdice</code> on irc.freenode.net to play now!
-        </li>
-        <li>
-          <a href="https://julianwachholz.github.io/jsbimaru/">JS Bimaru</a>
-          &ndash; <time>2011</time><br />
-          Solve battleship puzzles with my implementation of this newspaper
-          puzzle game.
-        </li>
-        <li>
-          <a href="https://julianwachholz.github.io/css-clock/"
-            >CSS only clock</a
-          >
-          &ndash; <time>2011</time><br />
-          Animated clock in the Swiss railway style.
-        </li>
       </ol>
     </section>
     <section>
-      <h2>Work &amp; skills</h2>
+      <h2>Work &amp; Skills</h2>
       <ol>
         <li>
+          <a href="https://caplena.com/">Caplena</a> &ndash;
+          <time datetime="2022-06">since June 2022</time><br />
+          <abbr title="artificial intelligence">AI</abbr> text analysis for
+          instant feedback on open ended customer feedback.
+        </li>
+        <li>
           <a href="https://www.inaffect.net/">inaffect</a> &ndash;
-          <time datetime="2021-06">since June 2021</time><br />
-          Building innovative software for the web.
+          <time datetime="2021-06/2022-06">June 2021 - June 2022</time><br />
+          Building innovative concepts for the
+          <abbr title="Internet of Things">IOT</abbr>.
         </li>
         <li>
           <a href="https://www.quatico.com/">Quatico Solutions</a> &ndash;
           <time datetime="2020-05/2021-04">May 2020 - April 2021</time><br />
-          Native web components pattern catalogue.
+          Native web components pattern catalogue leveraging the shadow DOM.
         </li>
         <li>
           <a href="https://www.avectris.ch/">Avectris</a> &ndash;
@@ -150,24 +144,22 @@
         <li>
           <a href="https://www.polynorm.ch/">Polynorm</a> &ndash;
           <time datetime="2015-06/2019-04">June 2015 - April 2019</time><br />
-          Python&nbsp;3 with Django 2.0, Flask, Javascript / ES2016 with React
-          and MongoDB.
+          Python and React powered product information management system and
+          online shop.
         </li>
         <li>
           <a href="https://www.netagenda.com/en/">Netagenda</a> &ndash;
           <time datetime="2014-12/2015-06">November 2014 - May 2015</time><br />
-          Ported entire application from .NET to Django.
+          Refactored a legacy .NET appointment booking platform to a modern
+          Django stack.
         </li>
         <li>
           <a href="https://gonnado.com/en/">Gonnado</a> &ndash;
-          <time datetime="2014-08/2014-10">August 2014 - October 2014</time
-          ><br />
-          Python&nbsp;3 with Django. Cordova based mobile application.
+          <time datetime="2014-08/2014-10">August 2014 - October 2014</time>
         </li>
         <li>
           <a href="https://www.unic.com/">Unic</a> &ndash;
-          <time datetime="2011-03/2014-07">March 2011 - July 2014</time><br />
-          PHP 5 with TYPO3.
+          <time datetime="2011-03/2014-07">March 2011 - July 2014</time>
         </li>
       </ol>
     </section>
